@@ -1,4 +1,9 @@
 package main;
+/**
+ * @author Manoj Kumar Chaudhary
+ * @version 1.0
+ */
+
 
 import java.util.Scanner;
 
@@ -12,8 +17,8 @@ public class Gravity {
         Scanner keyboard = new Scanner(System.in);
         System.out.println("Enter the falling time (in second): ");
         time = keyboard.nextDouble();
-        velocity = g * t;
-        distance = ((1.0 * g * t * t) / 2);
+        velocity = gravity * time;
+        distance = ((1.0 * gravity * time * time) / 2);
         System.out.println("The speed of object at " + time + " seconds after its release is " + velocity + " and the distance the object has travelled in the " + time + "  seconds after the realease is " + distance);
 
 
